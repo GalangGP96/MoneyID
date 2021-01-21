@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#00ffff"
+    tools:context=".TrainingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_training"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/label_nom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Nominal"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/edt_nom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/label_nom"
+            android:layout_marginLeft="113dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/label_keaslian"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_nom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="52dp"
+            android:text="Keaslian"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/edt_keaslian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edt_nom"
+            android:layout_alignLeft="@id/label_nom"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffffff"
+        android:text="Submit"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/EdtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>
